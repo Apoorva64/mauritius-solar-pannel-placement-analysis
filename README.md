@@ -239,9 +239,9 @@ The data-visualization part is in the form of a QT application in the visualizat
    git clone 
     ```
 2. Download the data
-   The data processed data is too large to store in the github repository so you need to download the data from
-   [here](https://drive.google.com/drive/folders/1Z0Z0Z0Z0Z0Z0Z0Z0Z0Z0Z0Z0Z0Z0Z0Z?usp=sharing)
-   and put it in the poa-irradiance folder.
+   The processed data is too large to store in the github repository so you need to download the data from
+   [here](https://drive.google.com/drive/folders/1xUtbtT8F--Wr2o-wpVRPC2Pv3J2iWKev?usp=share_link)
+   and put the content of the data folder in the data folder of the project.
 
 3. Install the requirements
    ```sh
