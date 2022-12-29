@@ -1,562 +1,546 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-    <class>MainWindow</class>
-    <widget class="QMainWindow" name="MainWindow">
-        <property name="geometry">
-            <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>937</width>
-                <height>686</height>
-            </rect>
-        </property>
-        <property name="windowTitle">
-            <string>MainWindow</string>
-        </property>
-        <property name="iconSize">
-            <size>
-                <width>40</width>
-                <height>40</height>
-            </size>
-        </property>
-        <widget class="QWidget" name="centralwidget">
-            <layout class="QVBoxLayout" name="verticalLayout">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>937</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>40</width>
+    <height>40</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="satellite_data_tab">
+       <attribute name="title">
+        <string>Satellite Data</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Direct Normal Irradiance (DNI)</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>7</number>
+            </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <property name="bottomMargin">
+             <number>11</number>
+            </property>
+            <item>
+             <widget class="MplWidget" name="dni_mpl_widget" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <property name="spacing">
+                <number>7</number>
+               </property>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolBox" name="toolBox_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>583</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>583</width>
+                 <height>415</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Description</string>
+               </attribute>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
                 <item>
-                    <widget class="QTabWidget" name="tabWidget">
-                        <property name="currentIndex">
-                            <number>1</number>
-                        </property>
-                        <widget class="QWidget" name="satellite_data_tab">
-                            <attribute name="title">
-                                <string>Satellite Data</string>
-                            </attribute>
-                            <layout class="QVBoxLayout" name="verticalLayout_5">
-                                <item>
-                                    <widget class="QTabWidget" name="tabWidget_2">
-                                        <property name="currentIndex">
-                                            <number>0</number>
-                                        </property>
-                                        <widget class="QWidget" name="tab">
-                                            <attribute name="title">
-                                                <string>Direct Normal Irradiance (DNI)</string>
-                                            </attribute>
-                                            <layout class="QHBoxLayout" name="horizontalLayout">
-                                                <property name="spacing">
-                                                    <number>7</number>
-                                                </property>
-                                                <property name="sizeConstraint">
-                                                    <enum>QLayout::SetDefaultConstraint</enum>
-                                                </property>
-                                                <property name="bottomMargin">
-                                                    <number>11</number>
-                                                </property>
-                                                <item>
-                                                    <widget class="MplWidget" name="dni_mpl_widget" native="true">
-                                                        <property name="sizePolicy">
-                                                            <sizepolicy hsizetype="MinimumExpanding"
-                                                                        vsizetype="Preferred">
-                                                                <horstretch>0</horstretch>
-                                                                <verstretch>0</verstretch>
-                                                            </sizepolicy>
-                                                        </property>
-                                                        <layout class="QHBoxLayout" name="horizontalLayout_8">
-                                                            <property name="spacing">
-                                                                <number>7</number>
-                                                            </property>
-                                                        </layout>
-                                                    </widget>
-                                                </item>
-                                                <item>
-                                                    <widget class="QToolBox" name="toolBox_2">
-                                                        <property name="sizePolicy">
-                                                            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                                                                <horstretch>0</horstretch>
-                                                                <verstretch>0</verstretch>
-                                                            </sizepolicy>
-                                                        </property>
-                                                        <property name="minimumSize">
-                                                            <size>
-                                                                <width>583</width>
-                                                                <height>0</height>
-                                                            </size>
-                                                        </property>
-                                                        <property name="currentIndex">
-                                                            <number>0</number>
-                                                        </property>
-                                                        <widget class="QWidget" name="page_3">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>583</width>
-                                                                    <height>415</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Description</string>
-                                                            </attribute>
-                                                            <layout class="QHBoxLayout" name="horizontalLayout_7">
-                                                                <item>
-                                                                    <widget class="QLabel" name="label_2">
-                                                                        <property name="sizePolicy">
-                                                                            <sizepolicy hsizetype="Preferred"
-                                                                                        vsizetype="Preferred">
-                                                                                <horstretch>0</horstretch>
-                                                                                <verstretch>0</verstretch>
-                                                                            </sizepolicy>
-                                                                        </property>
-                                                                        <property name="minimumSize">
-                                                                            <size>
-                                                                                <width>0</width>
-                                                                                <height>0</height>
-                                                                            </size>
-                                                                        </property>
-                                                                        <property name="text">
-                                                                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DNI:
+                 <widget class="QLabel" name="label_2">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DNI:
                                                                                 Direct Normal Irradiance is the subset
                                                                                 of sunlight coming directly from the
                                                                                 sun.&lt;/p&gt;&lt;p&gt;The data was
                                                                                 collected from &lt;a href=&quot;https://wui.cmsaf.eu/safira/action/viewICDRDetails?acronym=SARAH_V002_ICDR&quot;
                                                                                 &gt;CMSAF&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                                                                             </string>
-                                                                        </property>
-                                                                        <property name="alignment">
-                                                                            <set>
-                                                                                Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop
-                                                                            </set>
-                                                                        </property>
-                                                                        <property name="wordWrap">
-                                                                            <bool>true</bool>
-                                                                        </property>
-                                                                    </widget>
-                                                                </item>
-                                                            </layout>
-                                                        </widget>
-                                                        <widget class="QWidget" name="page_4">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>100</width>
-                                                                    <height>30</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Variables</string>
-                                                            </attribute>
-                                                        </widget>
-                                                    </widget>
-                                                </item>
-                                            </layout>
-                                        </widget>
-                                        <widget class="QWidget" name="tab_3">
-                                            <attribute name="title">
-                                                <string>Global Horizontal Irradiance (GHI)</string>
-                                            </attribute>
-                                            <layout class="QHBoxLayout" name="horizontalLayout_6">
-                                                <item>
-                                                    <widget class="MplWidget" name="ghi_mpl_widget" native="true">
-                                                        <layout class="QHBoxLayout" name="horizontalLayout_4"/>
-                                                    </widget>
-                                                </item>
-                                                <item>
-                                                    <widget class="QToolBox" name="toolBox">
-                                                        <property name="sizePolicy">
-                                                            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                                                                <horstretch>0</horstretch>
-                                                                <verstretch>0</verstretch>
-                                                            </sizepolicy>
-                                                        </property>
-                                                        <property name="minimumSize">
-                                                            <size>
-                                                                <width>583</width>
-                                                                <height>0</height>
-                                                            </size>
-                                                        </property>
-                                                        <property name="currentIndex">
-                                                            <number>0</number>
-                                                        </property>
-                                                        <widget class="QWidget" name="page">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>562</width>
-                                                                    <height>66</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Description</string>
-                                                            </attribute>
-                                                            <layout class="QHBoxLayout" name="horizontalLayout_5">
-                                                                <item>
-                                                                    <widget class="QLabel" name="label">
-                                                                        <property name="sizePolicy">
-                                                                            <sizepolicy hsizetype="Preferred"
-                                                                                        vsizetype="Preferred">
-                                                                                <horstretch>0</horstretch>
-                                                                                <verstretch>0</verstretch>
-                                                                            </sizepolicy>
-                                                                        </property>
-                                                                        <property name="text">
-                                                                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Variables</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Global Horizontal Irradiance (GHI)</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="MplWidget" name="ghi_mpl_widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolBox" name="toolBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>583</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>583</width>
+                 <height>415</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Description</string>
+               </attribute>
+               <layout class="QHBoxLayout" name="horizontalLayout_5">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span
                                                                                 &gt;GHI: Global Horizontal Irradiance;
                                                                                 the total sunlight intensity falling on
                                                                                 a horizontal plane&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The
                                                                                 data was collected from &lt;a href=&quot;https://wui.cmsaf.eu/safira/action/viewICDRDetails?acronym=SARAH_V002_ICDR&quot;
                                                                                 &gt;CMSAF&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                                                                             </string>
-                                                                        </property>
-                                                                        <property name="alignment">
-                                                                            <set>
-                                                                                Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop
-                                                                            </set>
-                                                                        </property>
-                                                                        <property name="wordWrap">
-                                                                            <bool>true</bool>
-                                                                        </property>
-                                                                    </widget>
-                                                                </item>
-                                                            </layout>
-                                                        </widget>
-                                                        <widget class="QWidget" name="page_2">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>100</width>
-                                                                    <height>30</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Variables</string>
-                                                            </attribute>
-                                                        </widget>
-                                                    </widget>
-                                                </item>
-                                            </layout>
-                                        </widget>
-                                    </widget>
-                                </item>
-                            </layout>
-                        </widget>
-                        <widget class="QWidget" name="tab_2">
-                            <attribute name="title">
-                                <string>Graphs</string>
-                            </attribute>
-                            <layout class="QHBoxLayout" name="horizontalLayout_3">
-                                <item>
-                                    <widget class="QTabWidget" name="tabWidget_3">
-                                        <property name="currentIndex">
-                                            <number>1</number>
-                                        </property>
-                                        <widget class="QWidget" name="tab_5">
-                                            <attribute name="title">
-                                                <string>POA Irradiance with variable orientation</string>
-                                            </attribute>
-                                            <layout class="QHBoxLayout" name="horizontalLayout_11">
-                                                <item>
-                                                    <widget class="MplWidget" name="poa_irradiance_mpl_widget"
-                                                            native="true">
-                                                        <layout class="QHBoxLayout" name="horizontalLayout_12"/>
-                                                    </widget>
-                                                </item>
-                                                <item>
-                                                    <widget class="QToolBox" name="toolBox_4">
-                                                        <property name="sizePolicy">
-                                                            <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-                                                                <horstretch>0</horstretch>
-                                                                <verstretch>0</verstretch>
-                                                            </sizepolicy>
-                                                        </property>
-                                                        <property name="minimumSize">
-                                                            <size>
-                                                                <width>583</width>
-                                                                <height>0</height>
-                                                            </size>
-                                                        </property>
-                                                        <property name="currentIndex">
-                                                            <number>1</number>
-                                                        </property>
-                                                        <widget class="QWidget" name="page_7">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>82</width>
-                                                                    <height>390</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Description</string>
-                                                            </attribute>
-                                                            <layout class="QHBoxLayout" name="horizontalLayout_13">
-                                                                <item>
-                                                                    <widget class="QLabel" name="label_4">
-                                                                        <property name="sizePolicy">
-                                                                            <sizepolicy hsizetype="Preferred"
-                                                                                        vsizetype="Preferred">
-                                                                                <horstretch>0</horstretch>
-                                                                                <verstretch>0</verstretch>
-                                                                            </sizepolicy>
-                                                                        </property>
-                                                                        <property name="text">
-                                                                            <string>Plane of array irradiance (POA) is a
-                                                                                well-known term used to quantify the
-                                                                                incident irradiance on a given solar
-                                                                                array. It is the parameter most directly
-                                                                                related to the power output of a PV
-                                                                                module
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>98</width>
+                 <height>28</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Variables</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Graphs</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>POA Irradiance with variable orientation</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="MplWidget" name="poa_irradiance_mpl_widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_12"/>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolBox" name="toolBox_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>583</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page_7">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>583</width>
+                 <height>415</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Description</string>
+               </attribute>
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>Plane of array irradiance (POA) is a well-known term used to quantify the incident irradiance on a given solar array. It is the parameter most directly related to the power output of a PV module
                                                                             </string>
-                                                                        </property>
-                                                                        <property name="alignment">
-                                                                            <set>
-                                                                                Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop
-                                                                            </set>
-                                                                        </property>
-                                                                        <property name="wordWrap">
-                                                                            <bool>true</bool>
-                                                                        </property>
-                                                                    </widget>
-                                                                </item>
-                                                            </layout>
-                                                        </widget>
-                                                        <widget class="QWidget" name="page_8">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>583</width>
-                                                                    <height>415</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Variables</string>
-                                                            </attribute>
-                                                            <layout class="QVBoxLayout" name="verticalLayout_2">
-                                                                <item>
-                                                                    <layout class="QFormLayout" name="formLayout">
-                                                                        <item row="0" column="0">
-                                                                            <widget class="QLabel" name="label_6">
-                                                                                <property name="text">
-                                                                                    <string>surface azimuth</string>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                        <item row="0" column="1">
-                                                                            <widget class="QSpinBox"
-                                                                                    name="surface_azimuth">
-                                                                                <property name="minimum">
-                                                                                    <number>-180</number>
-                                                                                </property>
-                                                                                <property name="maximum">
-                                                                                    <number>180</number>
-                                                                                </property>
-                                                                                <property name="singleStep">
-                                                                                    <number>10</number>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                        <item row="1" column="0">
-                                                                            <widget class="QLabel" name="label_5">
-                                                                                <property name="text">
-                                                                                    <string>surface tilt</string>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                        <item row="1" column="1">
-                                                                            <widget class="QSpinBox"
-                                                                                    name="surface_tilt">
-                                                                                <property name="maximum">
-                                                                                    <number>90</number>
-                                                                                </property>
-                                                                                <property name="singleStep">
-                                                                                    <number>10</number>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                    </layout>
-                                                                </item>
-                                                                <item>
-                                                                    <widget class="QPushButton" name="update_POA">
-                                                                        <property name="text">
-                                                                            <string>Update</string>
-                                                                        </property>
-                                                                    </widget>
-                                                                </item>
-                                                            </layout>
-                                                        </widget>
-                                                    </widget>
-                                                </item>
-                                            </layout>
-                                        </widget>
-                                        <widget class="QWidget" name="tab_4">
-                                            <attribute name="title">
-                                                <string>Transposition factor</string>
-                                            </attribute>
-                                            <layout class="QHBoxLayout" name="horizontalLayout_2">
-                                                <item>
-                                                    <widget class="MplWidget" name="transposition_factor_mpl_widget"
-                                                            native="true">
-                                                        <layout class="QHBoxLayout" name="horizontalLayout_9"/>
-                                                    </widget>
-                                                </item>
-                                                <item>
-                                                    <widget class="QToolBox" name="toolBox_3">
-                                                        <property name="sizePolicy">
-                                                            <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
-                                                                <horstretch>0</horstretch>
-                                                                <verstretch>0</verstretch>
-                                                            </sizepolicy>
-                                                        </property>
-                                                        <property name="minimumSize">
-                                                            <size>
-                                                                <width>583</width>
-                                                                <height>0</height>
-                                                            </size>
-                                                        </property>
-                                                        <property name="currentIndex">
-                                                            <number>1</number>
-                                                        </property>
-                                                        <widget class="QWidget" name="page_5">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>281</width>
-                                                                    <height>415</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Description</string>
-                                                            </attribute>
-                                                            <layout class="QHBoxLayout" name="horizontalLayout_10">
-                                                                <item>
-                                                                    <widget class="QLabel" name="label_3">
-                                                                        <property name="sizePolicy">
-                                                                            <sizepolicy hsizetype="Preferred"
-                                                                                        vsizetype="Preferred">
-                                                                                <horstretch>0</horstretch>
-                                                                                <verstretch>0</verstretch>
-                                                                            </sizepolicy>
-                                                                        </property>
-                                                                        <property name="text">
-                                                                            <string>Description:</string>
-                                                                        </property>
-                                                                    </widget>
-                                                                </item>
-                                                            </layout>
-                                                        </widget>
-                                                        <widget class="QWidget" name="page_6">
-                                                            <property name="geometry">
-                                                                <rect>
-                                                                    <x>0</x>
-                                                                    <y>0</y>
-                                                                    <width>583</width>
-                                                                    <height>415</height>
-                                                                </rect>
-                                                            </property>
-                                                            <attribute name="label">
-                                                                <string>Variables</string>
-                                                            </attribute>
-                                                            <layout class="QVBoxLayout" name="verticalLayout_3">
-                                                                <item>
-                                                                    <layout class="QFormLayout" name="formLayout_2">
-                                                                        <item row="0" column="0">
-                                                                            <widget class="QLabel" name="label_7">
-                                                                                <property name="text">
-                                                                                    <string>surface azimuth</string>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                        <item row="0" column="1">
-                                                                            <widget class="QSpinBox"
-                                                                                    name="surface_azimuth_transposition_factor">
-                                                                                <property name="minimum">
-                                                                                    <number>-180</number>
-                                                                                </property>
-                                                                                <property name="maximum">
-                                                                                    <number>180</number>
-                                                                                </property>
-                                                                                <property name="singleStep">
-                                                                                    <number>10</number>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                        <item row="1" column="0">
-                                                                            <widget class="QLabel" name="label_8">
-                                                                                <property name="text">
-                                                                                    <string>surface tilt</string>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                        <item row="1" column="1">
-                                                                            <widget class="QSpinBox"
-                                                                                    name="surface_tilt_transposition_factor">
-                                                                                <property name="maximum">
-                                                                                    <number>90</number>
-                                                                                </property>
-                                                                                <property name="singleStep">
-                                                                                    <number>10</number>
-                                                                                </property>
-                                                                            </widget>
-                                                                        </item>
-                                                                    </layout>
-                                                                </item>
-                                                                <item>
-                                                                    <widget class="QPushButton" name="update_TF">
-                                                                        <property name="text">
-                                                                            <string>Update</string>
-                                                                        </property>
-                                                                    </widget>
-                                                                </item>
-                                                            </layout>
-                                                        </widget>
-                                                    </widget>
-                                                </item>
-                                            </layout>
-                                        </widget>
-                                    </widget>
-                                </item>
-                            </layout>
-                        </widget>
-                    </widget>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_8">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>583</width>
+                 <height>415</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Variables</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <layout class="QFormLayout" name="formLayout">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_6">
+                    <property name="text">
+                     <string>surface azimuth</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSpinBox" name="surface_azimuth">
+                    <property name="minimum">
+                     <number>-180</number>
+                    </property>
+                    <property name="maximum">
+                     <number>180</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>10</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_5">
+                    <property name="text">
+                     <string>surface tilt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSpinBox" name="surface_tilt">
+                    <property name="maximum">
+                     <number>90</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>10</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
                 </item>
                 <item>
-                    <widget class="QSlider" name="horizontalSlider">
-                        <property name="orientation">
-                            <enum>Qt::Horizontal</enum>
-                        </property>
-                        <property name="tickPosition">
-                            <enum>QSlider::TicksBelow</enum>
-                        </property>
-                        <property name="tickInterval">
-                            <number>9</number>
-                        </property>
-                    </widget>
+                 <widget class="QPushButton" name="update_POA">
+                  <property name="text">
+                   <string>Update</string>
+                  </property>
+                 </widget>
                 </item>
-            </layout>
-        </widget>
-        <widget class="QMenuBar" name="menubar">
-            <property name="geometry">
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Transposition factor</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="MplWidget" name="transposition_factor_mpl_widget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_9"/>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolBox" name="toolBox_3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>583</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="page_5">
+               <property name="geometry">
                 <rect>
-                    <x>0</x>
-                    <y>0</y>
-                    <width>937</width>
-                    <height>26</height>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>583</width>
+                 <height>415</height>
                 </rect>
-            </property>
-        </widget>
-        <widget class="QStatusBar" name="statusbar"/>
-    </widget>
-    <customwidgets>
-        <customwidget>
-            <class>MplWidget</class>
-            <extends>QWidget</extends>
-            <header>mplwidget.h</header>
-            <container>1</container>
-        </customwidget>
-    </customwidgets>
-    <resources/>
-    <connections/>
+               </property>
+               <attribute name="label">
+                <string>Description</string>
+               </attribute>
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>The Transposition Factor is the ratio of the incident irradiation (GlobInc) on the plane, to the horizontal irradiation (GlobHor). I.e. what you gain (or loose) when tilting the collector plane. </string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="page_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>583</width>
+                 <height>415</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>Variables</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <layout class="QFormLayout" name="formLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_7">
+                    <property name="text">
+                     <string>surface azimuth</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QSpinBox" name="surface_azimuth_transposition_factor">
+                    <property name="minimum">
+                     <number>-180</number>
+                    </property>
+                    <property name="maximum">
+                     <number>180</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>10</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_8">
+                    <property name="text">
+                     <string>surface tilt</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QSpinBox" name="surface_tilt_transposition_factor">
+                    <property name="maximum">
+                     <number>90</number>
+                    </property>
+                    <property name="singleStep">
+                     <number>10</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="update_TF">
+                  <property name="text">
+                   <string>Update</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::TicksBelow</enum>
+      </property>
+      <property name="tickInterval">
+       <number>9</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>937</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
 </ui>
