@@ -239,3 +239,8 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+/.idea/inspectionProfiles/
+/.idea/sonarlint/issuestore/
+/data/
+/.idea/discord.xml
+/.idea/codestream.xml

@@ -10,4 +10,5 @@ solar_positions_path = data_path / "solar_positions"
 height_data_path = data_path / "satellite-data/height_data/NASADEM_NC.001_30m_aid0001.nc"
 temperature_data_path = data_path / "satellite-data/temperature-data/MOD11A1.006_1km_aid0001.nc"
 poa_data_path = data_path / "poa-irradiance"
+best_transposition_factor_path = data_path / "best-transposition-factor"
 MAURITIUS_CONTOUR_FILE = shapefile.Reader(str(data_path / "shapefiles/mauritius_coastline.shp"))

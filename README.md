@@ -128,13 +128,13 @@ power per area (watts per square meter):
 * GHI: Global Horizontal Irradiance; the total sunlight intensity falling on a horizontal plane
 
 <p align="center">
-  <img src="data/graphs/GHI-yearly.png" alt="GHI" height="400" width="auto">
+  <img src="data/graphs/GHI-yearly.png" alt="GHI" style="max-height: 400px">
 </p>
 
 * DNI: Direct Normal Irradiance; the subset of sunlight coming directly from the sun
 
 <p align="center">
-  <img src="data/graphs/DNI-yearly.png" alt="DNI" height="400" width="auto">
+  <img src="data/graphs/DNI-yearly.png" alt="DNI" style="max-height: 400px">
 </p>
 
 * DHI: Diffuse Horizontal Irradiance; the subset of sunlight falling on a horizontal plane that isn’t coming directly
@@ -173,7 +173,7 @@ The data calculated is too large to store in a single file so we store it in mul
 data/poa-irradiance/{tilt}_{azimuth}.nc
 
 <p align="center">
-  <img src="data/graphs/POA-flat-panel-yearly.png" alt="POA" height="400" width="auto">
+  <img src="data/graphs/POA-flat-panel-yearly.png" alt="POA" style="max-height: 400px">
 </p>
 
 ## 3. Finding the best location and orientation for solar panels in Mauritius yearly
@@ -185,19 +185,35 @@ what you gain (or loose) when tilting the collector plane
 
 
 <p align="center">
-  <img src="data/graphs/Best-transposition-factor-yearly.png" alt="Transposition Factor" height="400" >
+  <img src="data/graphs/poa-analysis/transposition-factor-2019-01-01_2019-12-31.png" alt="Transposition Factor" style="max-height: 400px">
+  <img src="data/graphs/poa-analysis/tilt-2019-01-01_2019-12-31.png" alt="Best Tilt" style="max-height: 400px">
+  <img src="data/graphs/poa-analysis/azimuth-2019-01-01_2019-12-31.png" alt="Best Azimuth" style="max-height: 400px">
 </p>
 
 We can see that when we change the panel orientation we can only gain 1-3% more energy with a fixed panel over the year.
 
 
 <p align="center">
-  <img src="data/graphs/Best-POA-yearly.png" alt="Best POA" height="400" >
+  <img src="data/graphs/poa-analysis/POA-2019-01-01_2019-12-31.png" alt="Best POA" style="max-height: 400px">
 </p>
 
 By looking at the irradiance of the best location and orientation, we can see that the best location for solar panels in
-Mauritius is in the north of the island.
+Mauritius is in the north of the island with a tilt of 21° and an azimuth of 4°.
 
+## 4. Finding the best location and orientation for solar panels in Mauritius monthly
+
+The location and orientation of the PV panels can be further optimized by taking into account the monthly variation in
+the amount of sunlight available.
+
+<p align="center">
+  <img src="data/graphs/Best-transposition-factor-animated.gif" alt="Transposition Factor" style="max-height: 400px">
+  <img src="data/graphs/Best-POA-animated.gif" alt="Best Tilt" style="max-height: 400px">
+  <img src="data/graphs/Best-tilt-animated.gif" alt="Best Tilt" style="max-height: 400px">
+  <img src="data/graphs/Best-azimuth-animated.gif" alt="Best Azimuth" style="max-height: 400px">
+</p>
+
+As we can see, the best location and orientation for solar panels in Mauritius changes from month to month.
+By optimizing the location and orientation of the PV panels for each month, we can gain up to 25% more energy.
 
 
 
@@ -243,11 +259,11 @@ The data-visualization part is in the form of a QT application in the visualizat
 In the visualization app you can view the different graphs and maps of the dataset.
 
 <p align="center">
-  <img src="data/images/dni-example-image.png" alt="Best POA" height="400" width="auto">
+  <img src="data/images/dni-example-image.png" alt="Best POA" style="max-height: 400px">
 </p>
 
 <p align="center">
-  <img src="data/images/poa-irradiance-example.png" alt="Best POA" height="400" width="auto">
+  <img src="data/images/poa-irradiance-example.png" alt="Best POA" style="max-height: 400px">
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
